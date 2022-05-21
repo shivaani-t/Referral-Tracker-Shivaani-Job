@@ -1,3 +1,3 @@
 # Referral-Tracker
-Backend - Job Posting \n
-Select the another branch 'master' to view the code
+<h3>Backend - Job Posting</h3><br>
+<p>Select the another branch 'master' to view the code<p>
