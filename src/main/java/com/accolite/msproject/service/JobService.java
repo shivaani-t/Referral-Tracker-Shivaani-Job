@@ -23,11 +23,7 @@ public class JobService {
 		return jobRepo.findAll();
 	}
 	
-	public Job addJob(Job job) {
-		return jobRepo.save(job);
-	}
-	
-	public Job updateJob(Job job) {
+	public Job saveJob(Job job) {
 		return jobRepo.save(job);
 	}
 	

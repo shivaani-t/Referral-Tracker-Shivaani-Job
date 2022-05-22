@@ -17,14 +17,18 @@ public class Job {
 	private String location;
 	private String requirements;
 	private String experience;
-	
+	private String email;
+	private boolean referral;
+
 	public Job() {}
 	
-	public Job(String title, Long jobid, String location) {
+	public Job(String title, Long jobid, String location,String email) {
 
 		this.title = title;
 		this.jobid = jobid;
 		this.location = location;
+		this.email=email;
+		
 	}
 
 	public String getTitle() {
@@ -63,6 +67,20 @@ public class Job {
 	public void setExperience(String experience) {
 		this.experience = experience;
 	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	public boolean isReferral() {
+		return referral;
+	}
+
+	public void setReferral(boolean referral) {
+		this.referral = referral;
+	}
 	
 	@Override
 	public String toString() {
@@ -73,6 +91,8 @@ public class Job {
 			", location='" + location + '\'' +
 			", requirements='" + requirements + '\'' +
 			", experience='" + experience + '\'' +
+			", email='" + email + '\'' +
+			", referral='" + referral + '\'' +
 			'}';
 	}
 

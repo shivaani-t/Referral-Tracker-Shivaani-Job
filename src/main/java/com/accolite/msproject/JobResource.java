@@ -35,13 +35,13 @@ public class JobResource {
 	
 	@PostMapping("/add")
 	public ResponseEntity<Job> addJob(@RequestBody Job job){
-		Job newJob = jobService.addJob(job);
+		Job newJob = jobService.saveJob(job);
 		return new ResponseEntity<>(newJob, HttpStatus.CREATED);
 	}
 	
 	@PutMapping("/update")
 	public ResponseEntity<Job> updateJob(@RequestBody Job job){
-		Job updateJob = jobService.updateJob(job);
+		Job updateJob = jobService.saveJob(job);
 		return new ResponseEntity<>(updateJob, HttpStatus.OK);
 	}
 	
